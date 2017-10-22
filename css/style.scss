@@ -1,0 +1,46 @@
+
+$fontcolor: #eee;
+$listbackground: rgba(0, 0, 0, 0.3);
+
+* { 
+	margin: 0; 
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: $fontcolor;
+}
+
+#config,
+#visual {
+	width: 50%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	float: left;
+}
+
+#config {
+	background: indigo;
+}
+
+#visual {
+	background: indianred;
+}
+
+ul {
+	display: inline-block;
+
+	li {
+		list-style-type: none;
+		padding: 15px 25px;
+		margin-bottom: 15px;
+		background: $listbackground;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
